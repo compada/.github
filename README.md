@@ -1,3 +1,0 @@
-# Compada
-
-## TODO
