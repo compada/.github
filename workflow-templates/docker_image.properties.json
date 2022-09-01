@@ -1,0 +1,11 @@
+{
+  "name": "Octo Organization Workflow",
+  "description": "Octo Organization CI starter workflow.",
+  "iconName": "docker",
+  "categories": [
+      "Dockerfile"
+  ],
+  "filePatterns": [
+      "^Dockerfile"
+  ]
+}
