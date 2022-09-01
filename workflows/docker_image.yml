@@ -2,10 +2,6 @@ on:
   push:
     branches:
       - main
-  pull_request:
-    types:
-      - opened
-      - synchronize
   workflow_call:
 name: Docker Image
 jobs:
@@ -15,6 +11,17 @@ jobs:
     steps:
     - name: Set ENV
       run: echo INPUT_REPOSITORY=$GITHUB_REPOSITORY/${GITHUB_REPOSITORY##*/} >> $GITHUB_ENV
+    - name: Checkout
+      uses: actions/checkout@v3
+    - name: Docker meta
+      id: meta
+      uses: docker/metadata-action@v4
+      with:
+        images: |
+          ghcr.io/${INPUT_REPOSITORY}
+        tags: |
+          type=latest
+          type=sha
     - name: Set up QEMU
       uses: docker/setup-qemu-action@v2
     - name: Set up Docker Buildx
@@ -28,6 +35,6 @@ jobs:
     - name: Build and push
       uses: docker/build-push-action@v3
       with:
-        repository: $GITHUB_REPOSITORY
         push: true
-        tags: ${GIT_BRANCH}-${GIT_SHA:0:7}-$(date +%s)
+        tags: ${{ steps.meta.outputs.tags }}
+        labels: ${{ steps.meta.outputs.labels }}
