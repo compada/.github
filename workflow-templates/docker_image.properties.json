@@ -1,11 +1,5 @@
 {
   "name": "Docker Image",
   "description": "Build, tag, and push image to GHCR",
-  "iconName": "docker",
-  "categories": [
-      "Dockerfile"
-  ],
-  "filePatterns": [
-      "^Dockerfile"
-  ]
+  "iconName": "docker"
 }
