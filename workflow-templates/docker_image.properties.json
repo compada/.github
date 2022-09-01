@@ -1,6 +1,6 @@
 {
-  "name": "Octo Organization Workflow",
-  "description": "Octo Organization CI starter workflow.",
+  "name": "Docker Image",
+  "description": "Build, tag, and push image to GHCR",
   "iconName": "docker",
   "categories": [
       "Dockerfile"
