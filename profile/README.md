@@ -61,7 +61,7 @@ We’re avid believers of protecting ourselves from... ourselves. CI enables us 
 
 ...all without you really having to know much about the repo. Just like the REPL you get into when you’re debugging code, CI let’s you know when things aren’t ready to be merged just yet, and most importantly, how to rectify things!
 
-We make extensive use of GitHub Actions. Reusable workflows are kept in compada/compada, and templates for adding Actions to a new repo are available in .github/workflow-templates.
+We make extensive use of GitHub Actions. Reusable workflows are kept in <https://github.com/compada/compada>, and templates for adding Actions to a new repo are available in <https://github.com/compada/.github/workflow-templates>.
 
 ## Continuous Deployment
 
