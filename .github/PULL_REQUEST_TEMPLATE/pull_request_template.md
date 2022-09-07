@@ -1,10 +1,4 @@
----
-name: Proposed Change
-about: 'ch-ch-ch-ch-changes...'
-title: ''
----
-
-## Proposed Change
+# Proposed Change
 
 [//]: # (Describe the big picture of your change here and communicate why we should accept this pull request. If it fixes a bug or resolves a feature request, be sure to link to that issue.)
 
