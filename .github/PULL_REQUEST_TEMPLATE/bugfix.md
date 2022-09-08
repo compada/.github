@@ -16,4 +16,4 @@ title: ''
 
 ## Further comments
 
-[//]: # (If this is a relatively large or complex change, kick off a discussion within the org and explain why you chose the solution you did and what alternatives you considered, etc... Please link any ADRs or TDDs)
+[//]: # (If this is a relatively large or complex change, kick off a discussion within the org and explain why you chose the solution you did and what alternatives you considered, etc... Please link any ADRs or TDDs!)
