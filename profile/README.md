@@ -1,8 +1,8 @@
 # Compada Engineering
 
-Welcome to Compada Engineering! If you stumbled upon this, and you’re not really sure what we’re about, please head over to <https://www.compada.io>; send us your resume if you believe in our mission. If you’re new to the organization, we’re looking forward to working with you!
+Welcome to Compada Engineering! If you stumbled upon this, and you're not really sure what we're about, please head over to <https://www.compada.io>; send us your resume if you believe in our mission. If you're new to the organization, we're looking forward to working with you!
 
-Check out <https://github.com/orgs/compada/discussions> for any new announcements and to read up on our [ADRs](https://docs.aws.amazon.com/prescriptive-guidance/latest/architectural-decision-records/adr-process.html). Hopefully this living document can help you get started with our stack, and serve as a North Star if you’re ever lost.
+Check out <https://github.com/orgs/compada/discussions> for any new announcements and to read up on our [ADRs](https://docs.aws.amazon.com/prescriptive-guidance/latest/architectural-decision-records/adr-process.html). Hopefully this living document can help you get started with our stack, and serve as a North Star if you're ever lost.
 
 ## Architecture
 
@@ -15,9 +15,9 @@ Microservices for the win. Federated GraphQL to avoid Christmas tree? Kubernetes
 
 ## Development Environment
 
-Containerization changed everything. Long ago are the days of needing a version manager for every language you’re tinkering with, and trying to remember the syntax of each one. [asdf](https://asdf-vm.com/) solves part of the problem, but [docker FROM](https://docs.docker.com/engine/reference/builder/#from) renders most version tooling obsolete. Pick a language and version (and even platform); now it’s not only checked into source code, but used in every environment.
+Containerization changed everything. Long ago are the days of needing a version manager for every language you're tinkering with, and trying to remember the syntax of each one. [asdf](https://asdf-vm.com/) solves part of the problem, but [docker FROM](https://docs.docker.com/engine/reference/builder/#from) renders most version tooling obsolete. Pick a language and version (and even platform); now it's not only checked into source code, but used in every environment.
 
-But there’s so much more... the Dockerfile allows you to configure a “box” with as much or as little as you desire - and it’s reproducible! 🪦 Chef and Ansible. You can easily look at a Dockerfile, and with a basic understanding of how a shell works, know what you can expect from the container it will spin up.
+But there's so much more... the Dockerfile allows you to configure a “box” with as much or as little as you desire - and it's reproducible! 🪦 Chef and Ansible. You can easily look at a Dockerfile, and with a basic understanding of how a shell works, know what you can expect from the container it will spin up.
 
 All that is to say that setting up your local environment is as easy as setting up [docker](https://docs.docker.com/desktop/)...
 
@@ -47,11 +47,11 @@ docker compose up -d
 
 ## Pre-commit Hooks
 
-We don’t want to argue about style... there are linters provided for most languages that cover everything from syntax to formatting to deprecations to complexity. Make sure your editor is setup to use those linters, or get yelled at by the hooks before you can commit your changes.
+We don't want to argue about style... there are linters provided for most languages that cover everything from syntax to formatting to deprecations to complexity. Make sure your editor is setup to use those linters, or get yelled at by the hooks before you can commit your changes.
 
 ## Continuous Integration
 
-We’re avid believers of protecting ourselves from... ourselves. CI enables us to do things like:
+We're avid believers of protecting ourselves from... ourselves. CI enables us to do things like:
 
 - verify our tests are passing
 - check our code against linters
@@ -59,7 +59,7 @@ We’re avid believers of protecting ourselves from... ourselves. CI enables us 
 - build various artifacts
 - keep our dependencies current
 
-...all without you really having to know much about the repo. Just like the REPL you get into when you’re debugging code, CI let’s you know when things aren’t ready to be merged just yet, and most importantly, how to rectify things!
+...all without you really having to know much about the repo. Just like the REPL you get into when you're debugging code, CI let's you know when things aren't ready to be merged just yet, and most importantly, how to rectify things!
 
 We make extensive use of GitHub Actions. Reusable workflows are kept in <https://github.com/compada/compada>, and templates for adding Actions to a new repo are available in <https://github.com/compada/.github/workflow-templates>.
 
