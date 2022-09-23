@@ -1,4 +1,6 @@
 {
   "name": "Build, tag, push docker",
-  "description": "Build, tag, and push image to GHCR"
+  "description": "Build, tag, and push image to GHCR",
+  "categories": [],
+  "filePatterns": []
 }
