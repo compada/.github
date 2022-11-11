@@ -4,6 +4,7 @@ on:
       - $default-branch
     paths-ignore:
       - 'deploy/**'
+      - '.github/**'
 name: Docker Image
 jobs:
   docker:
