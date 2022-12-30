@@ -42,6 +42,7 @@ alias dr='docker compose run --rm '
 
 dr npm install nodemon --save-dev
 dr npx graphile-migrate commit
+dr node - # opens node CLI
 
 dr go get -d golang.org/x/net
 dr go mod tidy
